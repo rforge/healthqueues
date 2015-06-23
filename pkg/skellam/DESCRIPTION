@@ -1,9 +1,11 @@
 Package: skellam
-Version: 0.0-9
-Date: 2015-06-19
+Version: 0.1
+Date: 2015-06-23
 Title: Densities and Sampling for the Skellam Distribution
 Author: Jerry W. Lewis, Patrick E. Brown <patrick.brown@utoronto.ca>
 Maintainer: Patrick E. Brown <patrick.brown@utoronto.ca>
 Description: Functions for the Skellam distribution, including: density
         (pmf), cdf, quantiles and random variates.
 License: GPL (>= 2)
+Suggests: knitr
+VignetteBuilder: knitr

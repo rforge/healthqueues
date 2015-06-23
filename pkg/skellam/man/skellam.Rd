@@ -120,7 +120,7 @@ pskellam.sp(q, lambda1, lambda2 = lambda1, lower.tail = TRUE, log.p = FALSE)
   Wikipedia. \emph{Skellam distribution} \url{http://en.wikipedia.org/wiki/Skellam_distribution}
 }
 \examples{
-require(skellam)
+require('skellam')
 
 # one lambda = 0 ~ Poisson
 dskellam(0:10,5,0)    # dpois(0:10,5)
