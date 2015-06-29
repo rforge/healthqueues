@@ -9,7 +9,7 @@
 
 \usepackage{subcaption}
 
-\newcommand{\subfloat}[2][need a sub-caption]{\subcaptionbox{#1}{#2}}
+\providecommand{\subfloat}[2][need a sub-caption]{\subcaptionbox{#1}{#2}}
 
 
 \title{The Skellam distribution}
