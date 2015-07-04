@@ -8,6 +8,6 @@ Description: Functions for the Skellam distribution, including: density
         (pmf), cdf, quantiles and random variates.
 URL: http://r-forge.r-project.org/projects/healthqueues/
 License: GPL (>= 2)
-Depends: stats
+Imports: stats
 Suggests: knitr
 VignetteBuilder: knitr
