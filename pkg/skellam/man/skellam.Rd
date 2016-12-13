@@ -70,18 +70,17 @@ pskellam.sp(q, lambda1, lambda2 = lambda1, lower.tail = TRUE, log.p = FALSE)
 }
 
 \note{
-  The \code{VGAM} package
-   (\url{http://lib.stat.cmu.edu/R/CRAN/web/packages/VGAM/index.html})
-   also contains \code{dskellam} and \code{rskellam} functions, which are syntactically similar;
+  The \pkg{VGAM} package
+   also contains \link[VGAM]{Skellam} functions, which are syntactically similar;
    independently developed versions are included here for completeness.
   Moreover, this \code{dskellam} function offers a broader working range,
    correct handling of cases where at least one rate parameter is zero,
    enhanced argument checking,
    and (in R versions prior to 2.9) improved accuracy for x<0.
   If both packages are loaded,
-   \code{get("dskellam",pos="package:skellam")}
+   \code{skellam::dskellam}
    or
-   \code{get("dskellam",pos="package:VGAM")}
+   \code{VGAM::dskellam}
    can unambiguously specify which implementation to use.
 }
 \value{
@@ -98,7 +97,7 @@ pskellam.sp(q, lambda1, lambda2 = lambda1, lower.tail = TRUE, log.p = FALSE)
 
   \code{qskellam} uses the Cornish--Fisher expansion to include skewness and kurtosis
   corrections to a normal approximation, followed by a search.
-  If \code{getOption("verbose")==TRUE}, then qskellam will not use qpois when one of the \code{lambda}s is zero,
+  If \code{getOption("verbose")==TRUE}, then \code{qskellam} will not use qpois when one of the \code{lambda}s is zero,
   in order to verify that this search algorithm has been implemented properly.
 }
 \references{
