@@ -4,14 +4,9 @@ citEntry(entry = "Manual",
   title   = "Densities and Sampling for the Skellam Distribution",
   author  = personList(
   	as.person("Jerry W Lewis"), 
-  	as.person("Patrick E Brown")),
-  year    = 2015,
-  url = 
-  	"http://r-forge.r-project.org/projects/healthqueues",
-
-textVersion  =
-  paste("Jerry W. Lewis and Patrick E. Brown (2015).",
-        "Densities and Sampling for the Skellam Distribution.",
-        "URL http://r-forge.r-project.org/projects/healthqueues.")
+  	as.person("Patrick E Brown"),
+  	as.person('Michail Tsagris'),
+  year    = 2016,
+  url = "http://r-forge.r-project.org/projects/healthqueues"
 )
 
