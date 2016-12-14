@@ -5,7 +5,7 @@ citEntry(entry = "Manual",
   author  = personList(
   	as.person("Jerry W Lewis"), 
   	as.person("Patrick E Brown"),
-  	as.person('Michail Tsagris'),
+  	as.person('Michail Tsagris')),
   year    = 2016,
   url = "http://r-forge.r-project.org/projects/healthqueues"
 )
