@@ -5,7 +5,7 @@ Title: Densities and Sampling for the Skellam Distribution
 Author: Jerry W. Lewis, Patrick E. Brown <patrick.brown@utoronto.ca>, Michail Tsagris <mtsagris@yahoo.gr>
 Maintainer: Patrick E. Brown <patrick.brown@utoronto.ca>
 Description: Functions for the Skellam distribution, including: density
-    (pmf), cdf, quantiles and random variates.
+    (pmf), cdf, quantiles and regression.
 URL: http://r-forge.r-project.org/projects/healthqueues/
 License: GPL (>= 2)
 Imports:
