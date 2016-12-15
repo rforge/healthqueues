@@ -106,7 +106,7 @@ If \eqn{Y_1} and \eqn{Y_2} are Poisson variables with means
 
   \code{qskellam} uses the Cornish--Fisher expansion to include skewness and kurtosis
   corrections to a normal approximation, followed by a search.
-  If \code{getOption("verbose")==TRUE}, then \code{qskellam} will not use \code\link[stats]{qpois}}
+  If \code{getOption("verbose")==TRUE}, then \code{qskellam} will not use \code{\link[stats]{qpois}}
   when one of the \code{lambda}s is zero,
   in order to verify that this search algorithm has been implemented properly.
 }
@@ -114,7 +114,7 @@ If \eqn{Y_1} and \eqn{Y_2} are Poisson variables with means
   Butler, R. (2007) \emph{Saddlepoint Approximations with Applications},
    Cambridge University Press, Cambridge & New York, p.17.
 
-  Johnson, N. L. (1959) On an extension of the connexion between Poisson and \eqn{chi^2} distributions.
+  Johnson, N. L. (1959) On an extension of the connection between Poisson and \eqn{\chi^2} distributions.
    \emph{Biometrika} \bold{46}, 352--362.
 
   Johnson, N. L.; Kotz, S.; Kemp, A. W. (1993) \emph{Univariate Discrete Distributions}, 2nd ed.,
