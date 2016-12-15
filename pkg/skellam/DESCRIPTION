@@ -11,7 +11,8 @@ License: GPL (>= 2)
 Imports:
     stats
 Suggests:
-    knitr,
+    knitr
+Enhances:
     VGAM
 VignetteBuilder: knitr
 RoxygenNote: 5.0.1
