@@ -46,9 +46,9 @@ If \eqn{Y_1} and \eqn{Y_2} are Poisson variables with means
   \deqn{I(2 \sqrt{\lambda_1 \lambda_2}, |x|)  
     (\lambda_1/\lambda_2)^{x/2} \exp(-\lambda_1-\lambda_2)}
   where \eqn{I(y,\nu)} is the modified Bessel function of the first kind.
-  The \eqn{|x|} differs from most Skellam expressions in the literature, but is correct since x is an integer, 
-  resulting in improved portability and (in R versions prior to 2.9) improved accuracy for x<0.
-  Exponential scaling is used in besselI to postpone numerical problems. 
+  The \eqn{|x|} differs from most Skellam expressions in the literature, but is correct since \eqn{x} is an integer, 
+  resulting in improved portability and (in R versions prior to 2.9) improved accuracy for \eqn{x<0}.
+  Exponential scaling is used in \code{\link[base]{besselI}} to postpone numerical problems. 
   When numerical problems do occur, a saddlepoint approximation is substituted,
   which typically gives at least 4-figure accuracy.
   An alternative representation is
@@ -63,7 +63,7 @@ If \eqn{Y_1} and \eqn{Y_2} are Poisson variables with means
   for \eqn{x<=0} and
   \code{1 - pchisq(2*lambda1, 2*(x+1), 2*lambda2)}
   for \eqn{x>=0}.
-  When pchisq incorrectly returns 0, a saddlepoint approximation is substituted,
+  When \code{\link[stats]{pchisq}} incorrectly returns 0, a saddlepoint approximation is substituted,
   which typically gives at least 2-figure accuracy.
 
   The quantile is defined as the smallest value \eqn{x} such that
@@ -85,7 +85,7 @@ If \eqn{Y_1} and \eqn{Y_2} are Poisson variables with means
   Moreover, this \code{dskellam} function offers a broader working range,
    correct handling of cases where at least one rate parameter is zero,
    enhanced argument checking,
-   and (in R versions prior to 2.9) improved accuracy for x<0.
+   and (in R versions prior to 2.9) improved accuracy for \eqn{x<0}.
   If both packages are loaded,
    \code{skellam::dskellam}
    or
@@ -106,7 +106,8 @@ If \eqn{Y_1} and \eqn{Y_2} are Poisson variables with means
 
   \code{qskellam} uses the Cornish--Fisher expansion to include skewness and kurtosis
   corrections to a normal approximation, followed by a search.
-  If \code{getOption("verbose")==TRUE}, then \code{qskellam} will not use qpois when one of the \code{lambda}s is zero,
+  If \code{getOption("verbose")==TRUE}, then \code{qskellam} will not use \code\link[stats]{qpois}}
+  when one of the \code{lambda}s is zero,
   in order to verify that this search algorithm has been implemented properly.
 }
 \references{
